@@ -1,0 +1,56 @@
+# Arquitetura do Projeto - EcoHealth Tracker
+
+## Escolhas de Tecnologias
+- **React Native:** Para desenvolvimento multiplataforma (iOS e Android), permitindo um desenvolvimento eficiente e consistente para ambas as plataformas.
+- **Node.js:** Para o backend, gerenciando a coleta e processamento de dados, proporcionando um ambiente de execução rápido e escalável.
+- **MongoDB:** Para armazenamento de dados dos usuários e históricos de qualidade do ar, oferecendo flexibilidade e desempenho para grandes volumes de dados não estruturados.
+- **APIs Públicas de Qualidade do Ar:** Como OpenWeatherMap e AirVisual, fornecendo dados atualizados e confiáveis sobre a qualidade do ar.
+
+## Projeto Arquitetural
+
+### Context Diagram
+![Diagrama de Contexto](https://via.placeholder.com/800x600.png?text=Context+Diagram)
+*Descrição:* Este diagrama ilustra a interação d o EcoHealth Tracker com os usuários e sistemas externos, como APIs de qualidade do ar.
+
+### Container Diagram
+![Diagrama de Contêineres](https://via.placeholder.com/800x600.png?text=Container+Diagram)
+*Descrição:* Este diagrama detalha os principais contêineres do sistema, incluindo o aplicativo móvel, o backend e o banco de dados.
+
+### Component Diagram
+![Diagrama de Componentes](https://via.placeholder.com/800x600.png?text=Component+Diagram)
+*Descrição:* Este diagrama mostra os componentes internos de cada contêiner, como módulos de coleta de dados, processamento e armazenamento.
+
+### Code Diagram
+![Diagrama de Código](https://via.placeholder.com/800x600.png?text=Code+Diagram)
+*Descrição:* Este diagrama fornece uma visão detalhada da estrutura do código, destacando as principais classes e suas interações.
+
+## Justificativa do Modelo Escolhido
+A combinação de **React Native**, **Node.js** e **MongoDB** oferece uma solução escalável e eficiente para desenvolver uma aplicação responsiva e de alto desempenho. Aqui estão algumas razões específicas para essas escolhas:
+
+- **React Native:** Permite o desenvolvimento simultâneo para iOS e Android, reduzindo o tempo e os recursos necessários para a construção e manutenção do aplicativo.
+- **Node.js:** Ideal para aplicativos que exigem alta escalabilidade e rapidez no processamento de solicitações, devido ao seu modelo de I/O não-bloqueante.
+- **MongoDB:** Adequado para armazenar grandes volumes de dados não estruturados, como registros históricos de qualidade do ar, permitindo consultas rápidas e flexíveis.
+
+---
+
+### Descrição dos Diagramas
+
+#### Context Diagram (Diagrama de Contexto)
+O diagrama de contexto mostra a interação entre o usuário, o aplicativo móvel, o servidor backend e as APIs externas. Este diagrama fornece uma visão geral de como os diferentes elementos do sistema se comunicam.
+
+#### Container Diagram (Diagrama de Contêineres)
+O diagrama de contêineres detalha a estrutura de alto nível do sistema, dividindo-o em contêineres como o frontend (aplicativo móvel), o backend (servidor Node.js) e o banco de dados (MongoDB). Cada contêiner é responsável por um conjunto específico de funcionalidades.
+
+#### Component Diagram (Diagrama de Componentes)
+Este diagrama foca nos componentes internos de cada contêiner. Por exemplo, dentro do contêiner do backend, podemos ter componentes como o módulo de autenticação, o módulo de coleta de dados de API e o módulo de notificações.
+
+#### Code Diagram (Diagrama de Código)
+O diagrama de código fornece uma visão detalhada da organização do código-fonte, destacando as principais classes e suas interações. Este diagrama é útil para desenvolvedores que precisam entender a estrutura interna do código para contribuir ou modificar o sistema.
+
+### Conclusão
+
+O modelo arquitetural escolhido para o EcoHealth Tracker é projetado para ser escalável, eficiente e fácil de manter. A combinação das tecnologias selecionadas garante que o aplicativo seja capaz de fornecer dados precisos e em tempo real sobre a qualidade do ar, além de ser responsivo e acessível para os usuários.
+
+---
+
+**Nota:** Este é um modelo de documentação arquitetural. Os links para os diagramas são exemplos e devem ser substituídos pelos diagramas reais que você criar para o projeto.
