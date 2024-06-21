@@ -1,37 +1,30 @@
-# EcoHealth Tracker
+# Declaração do Problema
+
+## Contexto
+A crescente preocupação com as mudanças climáticas tem levado à necessidade de ações para reduzir a emissão de gases de efeito estufa. No entanto, muitas pessoas encontram dificuldade em monitorar e entender o impacto de suas atividades diárias sobre o meio ambiente.
+
+## Problema
+Os indivíduos carecem de ferramentas acessíveis e intuitivas para acompanhar sua pegada de carbono e receber orientações sobre como reduzir suas emissões. Isso resulta em uma falta de ação concreta em nível pessoal para combater as mudanças climáticas.
+# Proposta de Solução
+
+## EcoHealth
+
+EcoHealth é uma aplicação que permite aos usuários monitorar e reduzir suas emissões de carbono. A solução oferece:
+
+- **Monitoramento de Atividades**: Registro das atividades diárias que impactam a pegada de carbono.
+- **Cálculo da Pegada de Carbono**: Cálculo automático das emissões com base nas atividades registradas.
+- **Relatórios e Dicas**: Relatórios personalizados e dicas para ajudar os usuários a reduzir suas emissões.
+
+# Arquitetura do Sistema
 
 ## Visão Geral
+GreenHealth é composto por um backend desenvolvido em Java com Spring Boot e um frontend desenvolvido em React. A comunicação entre o frontend e o backend é realizada através de APIs RESTful.
 
-O **EcoHealth Tracker** é um aplicativo móvel que monitora a qualidade do ar em tempo real e fornece recomendações personalizadas de saúde. A poluição do ar é um problema significativo que afeta a saúde de milhões de pessoas, e este aplicativo visa ajudar os usuários a evitar áreas com alta poluição e a adotar hábitos mais saudáveis.
+## Backend
+- **Framework**: Spring Boot
+- **Banco de Dados**: MySQL
+- **Segurança**: Autenticação JWT
 
-## Funcionalidades
-
-- **Monitoramento em Tempo Real:** Coleta dados de qualidade do ar de APIs públicas e exibe informações atualizadas.
-- **Localização Atual:** Permite que os usuários vejam a qualidade do ar em sua localização atual.
-- **Notificações:** Envia notificações quando a qualidade do ar estiver ruim.
-- **Recomendações de Saúde:** Fornece dicas e recomendações personalizadas com base nos níveis de poluição.
-- **Histórico de Dados:** Armazena o histórico da qualidade do ar para análise futura.
-
-## Tecnologias Utilizadas
-
-- **React Native:** Desenvolvimento multiplataforma para iOS e Android.
-- **Node.js:** Backend para gerenciamento de dados e lógica do aplicativo.
-- **MongoDB:** Armazenamento de dados dos usuários e históricos de qualidade do ar.
-- **APIs Públicas de Qualidade do Ar:** OpenWeatherMap, AirVisual.
-
-## Instalação
-
-### Requisitos
-
-- Node.js e npm instalados
-- Expo CLI para desenvolvimento com React Native
-- MongoDB para armazenamento de dados
-- API keys para serviços de qualidade do ar (OpenWeatherMap, AirVisual)
-
-### Passos para Instalação
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/yourusername/EcoHealthTracker.git
-   cd EcoHealthTracker
+## Frontend
+- **Framework**: React
+- **Bibliotecas**: Axios para chamadas API, React Router para navegação
